@@ -16,6 +16,13 @@
 		A6EE718F2AF3A9A300F32F2A /* YeonSupaTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE718E2AF3A9A300F32F2A /* YeonSupaTodoTests.swift */; };
 		A6EE71992AF3A9A300F32F2A /* YeonSupaTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71982AF3A9A300F32F2A /* YeonSupaTodoUITests.swift */; };
 		A6EE719B2AF3A9A300F32F2A /* YeonSupaTodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE719A2AF3A9A300F32F2A /* YeonSupaTodoUITestsLaunchTests.swift */; };
+		A6EE71AA2AF3D34A00F32F2A /* TodosRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71A92AF3D34A00F32F2A /* TodosRepository.swift */; };
+		A6EE71AD2AF3DB9C00F32F2A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6EE71AC2AF3DB9C00F32F2A /* Alamofire */; };
+		A6EE71AF2AF3DBDD00F32F2A /* TodosRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71AE2AF3DBDD00F32F2A /* TodosRouter.swift */; };
+		A6EE71B22AF3DD8000F32F2A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71B12AF3DD8000F32F2A /* Constants.swift */; };
+		A6EE71B52AF3F27E00F32F2A /* TodoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71B42AF3F27E00F32F2A /* TodoEntity.swift */; };
+		A6EE71B72AF40CCC00F32F2A /* RequestResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6EE71B62AF40CCC00F32F2A /* RequestResponseTests.swift */; };
+		A6EE71BA2AF40EAE00F32F2A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6EE71B92AF40EAE00F32F2A /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		A6EE71942AF3A9A300F32F2A /* YeonSupaTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeonSupaTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6EE71982AF3A9A300F32F2A /* YeonSupaTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeonSupaTodoUITests.swift; sourceTree = "<group>"; };
 		A6EE719A2AF3A9A300F32F2A /* YeonSupaTodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeonSupaTodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A6EE71A92AF3D34A00F32F2A /* TodosRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRepository.swift; sourceTree = "<group>"; };
+		A6EE71AE2AF3DBDD00F32F2A /* TodosRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosRouter.swift; sourceTree = "<group>"; };
+		A6EE71B12AF3DD8000F32F2A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6EE71B42AF3F27E00F32F2A /* TodoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEntity.swift; sourceTree = "<group>"; };
+		A6EE71B62AF40CCC00F32F2A /* RequestResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResponseTests.swift; sourceTree = "<group>"; };
+		A6EE71BB2AF417AF00F32F2A /* YeonSupaTodo.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = YeonSupaTodo.xctestplan; sourceTree = "<group>"; };
+		A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE71AD2AF3DB9C00F32F2A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE71BA2AF40EAE00F32F2A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +95,12 @@
 		A6EE716B2AF3A9A000F32F2A = {
 			isa = PBXGroup;
 			children = (
+				A6EE71BB2AF417AF00F32F2A /* YeonSupaTodo.xctestplan */,
 				A6EE71762AF3A9A000F32F2A /* YeonSupaTodo */,
 				A6EE718D2AF3A9A300F32F2A /* YeonSupaTodoTests */,
 				A6EE71972AF3A9A300F32F2A /* YeonSupaTodoUITests */,
 				A6EE71752AF3A9A000F32F2A /* Products */,
+				A6EE71B82AF40EAE00F32F2A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +117,8 @@
 		A6EE71762AF3A9A000F32F2A /* YeonSupaTodo */ = {
 			isa = PBXGroup;
 			children = (
+				A6EE71B02AF3DD5A00F32F2A /* Utils */,
+				A6EE71A72AF3D30C00F32F2A /* Data */,
 				A6EE71772AF3A9A000F32F2A /* AppDelegate.swift */,
 				A6EE71792AF3A9A000F32F2A /* SceneDelegate.swift */,
 				A6EE717B2AF3A9A000F32F2A /* ViewController.swift */,
@@ -106,6 +126,7 @@
 				A6EE71802AF3A9A300F32F2A /* Assets.xcassets */,
 				A6EE71822AF3A9A300F32F2A /* LaunchScreen.storyboard */,
 				A6EE71852AF3A9A300F32F2A /* Info.plist */,
+				A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */,
 			);
 			path = YeonSupaTodo;
 			sourceTree = "<group>";
@@ -114,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				A6EE718E2AF3A9A300F32F2A /* YeonSupaTodoTests.swift */,
+				A6EE71B62AF40CCC00F32F2A /* RequestResponseTests.swift */,
 			);
 			path = YeonSupaTodoTests;
 			sourceTree = "<group>";
@@ -125,6 +147,47 @@
 				A6EE719A2AF3A9A300F32F2A /* YeonSupaTodoUITestsLaunchTests.swift */,
 			);
 			path = YeonSupaTodoUITests;
+			sourceTree = "<group>";
+		};
+		A6EE71A72AF3D30C00F32F2A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE71B32AF3F25D00F32F2A /* Model */,
+				A6EE71A82AF3D31700F32F2A /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A6EE71A82AF3D31700F32F2A /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE71A92AF3D34A00F32F2A /* TodosRepository.swift */,
+				A6EE71AE2AF3DBDD00F32F2A /* TodosRouter.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		A6EE71B02AF3DD5A00F32F2A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE71B12AF3DD8000F32F2A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A6EE71B32AF3F25D00F32F2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6EE71B42AF3F27E00F32F2A /* TodoEntity.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6EE71B82AF40EAE00F32F2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +206,9 @@
 			dependencies = (
 			);
 			name = YeonSupaTodo;
+			packageProductDependencies = (
+				A6EE71AC2AF3DB9C00F32F2A /* Alamofire */,
+			);
 			productName = YeonSupaTodo;
 			productReference = A6EE71742AF3A9A000F32F2A /* YeonSupaTodo.app */;
 			productType = "com.apple.product-type.application";
@@ -161,6 +227,9 @@
 				A6EE718C2AF3A9A300F32F2A /* PBXTargetDependency */,
 			);
 			name = YeonSupaTodoTests;
+			packageProductDependencies = (
+				A6EE71B92AF40EAE00F32F2A /* Alamofire */,
+			);
 			productName = YeonSupaTodoTests;
 			productReference = A6EE718A2AF3A9A300F32F2A /* YeonSupaTodoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -215,6 +284,9 @@
 				Base,
 			);
 			mainGroup = A6EE716B2AF3A9A000F32F2A;
+			packageReferences = (
+				A6EE71AB2AF3DB9C00F32F2A /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A6EE71752AF3A9A000F32F2A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +330,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE71AF2AF3DBDD00F32F2A /* TodosRouter.swift in Sources */,
+				A6EE71B52AF3F27E00F32F2A /* TodoEntity.swift in Sources */,
 				A6EE717C2AF3A9A000F32F2A /* ViewController.swift in Sources */,
+				A6EE71AA2AF3D34A00F32F2A /* TodosRepository.swift in Sources */,
 				A6EE71782AF3A9A000F32F2A /* AppDelegate.swift in Sources */,
 				A6EE717A2AF3A9A000F32F2A /* SceneDelegate.swift in Sources */,
+				A6EE71B22AF3DD8000F32F2A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +344,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6EE71B72AF40CCC00F32F2A /* RequestResponseTests.swift in Sources */,
 				A6EE718F2AF3A9A300F32F2A /* YeonSupaTodoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +395,7 @@
 /* Begin XCBuildConfiguration section */
 		A6EE719C2AF3A9A300F32F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -381,6 +459,7 @@
 		};
 		A6EE719D2AF3A9A300F32F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -437,6 +516,7 @@
 		};
 		A6EE719F2AF3A9A300F32F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -465,6 +545,7 @@
 		};
 		A6EE71A02AF3A9A300F32F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +574,7 @@
 		};
 		A6EE71A22AF3A9A300F32F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +595,7 @@
 		};
 		A6EE71A32AF3A9A300F32F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +616,7 @@
 		};
 		A6EE71A52AF3A9A300F32F2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +635,7 @@
 		};
 		A6EE71A62AF3A9A300F32F2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6EE71BC2AF41BB200F32F2A /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +692,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6EE71AB2AF3DB9C00F32F2A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6EE71AC2AF3DB9C00F32F2A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6EE71AB2AF3DB9C00F32F2A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A6EE71B92AF40EAE00F32F2A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6EE71AB2AF3DB9C00F32F2A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6EE716C2AF3A9A000F32F2A /* Project object */;
 }

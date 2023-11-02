@@ -1,0 +1,12 @@
+//
+//  Config.xcconfig
+//  YeonSupaTodo
+//
+//  Created by yeon I on 11/3/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_URL=https:/$()/mahpuanqldetlulfmirh.supabase.co/rest/v1/"
+SUPABASE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1haHB1YW5xbGRldGx1bGZtaXJoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY5ODkxMzIwOCwiZXhwIjoyMDE0NDg5MjA4fQ.3AeQ_nnDX-uKx07mZ8pUazkPua0apx-W8YpLjLJ1dPY

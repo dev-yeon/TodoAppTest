@@ -1,0 +1,38 @@
+{
+  "configurations" : [
+    {
+      "id" : "C2AA29EE-7536-4AF0-B6EE-0D902070FC29",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:YeonSupaTodo.xcodeproj",
+      "identifier" : "A6EE71732AF3A9A000F32F2A",
+      "name" : "YeonSupaTodo"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:YeonSupaTodo.xcodeproj",
+        "identifier" : "A6EE71892AF3A9A300F32F2A",
+        "name" : "YeonSupaTodoTests"
+      }
+    },
+    {
+      "enabled" : false,
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:YeonSupaTodo.xcodeproj",
+        "identifier" : "A6EE71932AF3A9A300F32F2A",
+        "name" : "YeonSupaTodoUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
